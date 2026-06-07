@@ -1,12 +1,57 @@
-# React + Vite
+# E-Commerce Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern E-Commerce Dashboard built with React.js, Redux Toolkit, Firebase, and Vite. This application provides a complete shopping experience with product management, cart functionality, authentication, and admin controls.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* User Authentication
+* Product Listing & Management
+* Shopping Cart Functionality
+* Category Filtering
+* Product Search & Sorting
+* Admin Dashboard
+* Responsive Design
+* Firebase Integration
+* Redux Toolkit State Management
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React.js
+* Redux Toolkit
+* Firebase
+* Vite
+* JavaScript
+* CSS
+
+## Project Structure
+
+* Admin Dashboard
+* Product Management
+* Customer Shopping Experience
+* Cart Management
+* Authentication System
+
+## Installation
+
+```bash
+git clone https://github.com/Kainaat-Fida/e-commerce-dashboard.git
+cd e-commerce-dashboard
+npm install
+npm run dev
+```
+
+## Future Improvements
+
+* Payment Gateway Integration
+* Order Tracking
+* User Profiles
+* Product Reviews & Ratings
+* Wishlist Feature
+
+## Author
+
+Kainaat Fida
+
+Software Engineering Student | Frontend Developer
+
+GitHub: https://github.com/Kainaat-Fida
