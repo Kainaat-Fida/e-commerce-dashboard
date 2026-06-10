@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { toast } from "react-toastify";
 import CartItem from "../components/CartItem";
 import { clearCart } from "../features/cart/cartSlice";
 
@@ -37,7 +38,13 @@ const CartPage = () => {
               >
                 Clear Cart
               </button>
-              <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
+              <button
+                onClick={() => {
+                  dispatch(clearCart());
+                  toast.success("Order Placed Successfully!");
+                }}
+                className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600"
+              >
                 Checkout
               </button>
             </div>

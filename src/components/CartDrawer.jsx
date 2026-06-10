@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { X, Plus, Minus, Trash2 } from "lucide-react";
+import { toast } from "react-toastify";
 import {
     removeFromCart,
     updateQuantity,
@@ -109,11 +110,11 @@ const CartDrawer = ({ isOpen, onClose }) => {
                         <span>Rs. {totalAmount}</span>
                     </div>
                     <button
-                        onClick={() =>
-                            items.length > 0
-                                ? alert("Proceeding to Checkout!")
-                                : alert("Your cart is empty!")
-                        }
+                        onClick={() => {
+                            dispatch(clearCart());
+                            onClose();
+                            toast.success("Order Placed Successfully!");
+                        }}
                         disabled={items.length === 0}
                         className={`w-full py-2 rounded text-white 
                             ${items.length > 0
